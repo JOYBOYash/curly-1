@@ -1,0 +1,13 @@
+# secrets / local junk
+.env
+__pycache__/
+*.pyc
+
+# generated output (regenerate with: python carousel/scripts/carousel_run.py build <run>)
+carousel/output/*
+# ...but keep the finished example set — the README shows it
+!carousel/output/activate-laziness-myth
+
+# working slide renders inside run folders (plan.json stays)
+carousel/runs/*/slides/
+carousel/runs/*/media/

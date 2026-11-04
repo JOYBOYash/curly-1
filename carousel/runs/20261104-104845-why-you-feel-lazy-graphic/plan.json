@@ -1,0 +1,119 @@
+{
+  "slug": "activate-laziness-myth",
+  "topic": "Why you feel lazy to do something (the laziness myth) - Activate 3",
+  "template": "template-activate.html",
+  "theme": "activate",
+  "handle": "@activ8",
+  "tagline": "activate your own potential",
+  "brand_label": "@v8",
+  "canvas": [
+    1080,
+    1350
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "role": "hook",
+      "headline": "You're not\n*lazy*.\nYou're avoiding\na feeling.",
+      "subtitle": "",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2041,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide01.png"
+    },
+    {
+      "index": 2,
+      "role": "body",
+      "headline": "Psychologists\ntested that idea\n*691 times*.\nIt was never\nabout sloth.",
+      "subtitle": "low self-discipline predicted procrastination best",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Steel, 2007, Psychological Bulletin - meta-analysis"
+        ]
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2078,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide02.png"
+    },
+    {
+      "index": 3,
+      "role": "body",
+      "headline": "You don't dodge\ntasks. You dodge\n**boredom, doubt**\n**and dread**.",
+      "subtitle": "",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Sirois & Pychyl, 2013, Soc. & Personality Psychology Compass"
+        ]
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2115,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide03.png"
+    },
+    {
+      "index": 4,
+      "role": "body",
+      "headline": "That hour of\nscrolling? Not\nweakness. Your\nbrain **repairing**\n**your mood**.",
+      "subtitle": "they call it \"give in to feel good\" - escape now, guilt later",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Sirois & Pychyl, 2013 - short-term mood repair"
+        ]
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2152,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide04.png"
+    },
+    {
+      "index": 5,
+      "role": "body",
+      "headline": "The way out isn't\nmore guilt.\nIt's *forgiveness*.",
+      "subtitle": "119 students forgave a delay - then delayed less before their next exam",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Wohl et al., 2010, Personality and Individual Differences"
+        ]
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2189,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide05.png"
+    },
+    {
+      "index": 6,
+      "role": "cta",
+      "headline": "Start ugly.\nStart **now**.",
+      "subtitle": "name the feeling - shrink the task - forgive the slip",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "cta_pill": "",
+      "cta_soft": "",
+      "microcopy": "",
+      "bg_seed": 2226,
+      "out_file": "carousel\\runs\\20261104-104845-why-you-feel-lazy-graphic\\slides\\slide06.png"
+    }
+  ]
+}

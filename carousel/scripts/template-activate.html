@@ -1,0 +1,187 @@
+<!doctype html>
+<!--
+  ACTIVATE (The Graphic Effect) — carousel slide template (1080x1350, 4:5).
+  The kit's ONLY template.
+
+  Source: the user's two reference posters ("The Graphic Effect", Gagan Singh Gill).
+  The rules, enforced here:
+    - OFF-WHITE PAPER with faint grain, and oceans of whitespace. No cards, no
+      charts, no stickers, no ghost word, no avatar — nothing but type.
+    - TOP RAIL: zero-padded page number top-left, "© 2026" top-right. Small, quiet.
+    - THE HEADLINE IS THE WHOLE SLIDE: a bold grotesque (Inter 800), sentence case,
+      stacked one phrase per line, flush left, tight leading, auto-fitted HUGE.
+      The copy is one complete, punchy thought — a full sentence per card.
+    - EXACTLY ONE RED MOMENT per slide, two flavours via plan markers:
+        **word** -> white type on a red block (the reference's "alignment")
+        *word*   -> plain red type           (the reference's "Break")
+    - SOURCE CITATION in small gray under the headline (kept tiny, never loud).
+    - FOOTER bottom-left: bold brand line + italic gray tagline.
+
+  Placeholders are filled by carousel_render.py.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F1F1F0; --ink:#1A1A1A; --red:#E5301A; --gray:#8A8A90;
+    --sans:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --pad:76px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1350px;background:var(--paper)}
+  .stage{position:relative;width:1080px;height:1350px;overflow:hidden;
+         font-family:var(--sans);background:var(--paper);color:var(--ink)}
+
+  /* ---------- 1. the paper ---------- */
+  #paper{position:absolute;inset:0;width:1080px;height:1350px;z-index:0}
+
+  /* ---------- 2. top rail: page number (left), © year (right) ---------- */
+  .rail{position:absolute;top:calc(var(--pad) - 10px);left:var(--pad);right:var(--pad);
+        display:flex;align-items:baseline;justify-content:space-between;z-index:6;
+        font-size:22px;font-weight:500;color:var(--ink);letter-spacing:.02em}
+  .pageno{font-variant-numeric:tabular-nums}
+  .year{color:var(--ink)}
+
+  /* ---------- 3. the red moments ---------- */
+  mark{background:var(--red);color:#fff;border-radius:2px;
+       padding:.01em .10em;margin:0 -.04em;
+       -webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .rd{color:var(--red)}
+
+  /* ---------- 4. the headline: the whole slide ---------- */
+  .flow{position:absolute;left:var(--pad);right:var(--pad);top:210px;bottom:230px;
+        z-index:5;display:flex;flex-direction:column;justify-content:center;
+        align-items:flex-start}
+  .fit{display:flex;flex-direction:column;align-items:flex-start;gap:36px;width:100%;
+       transform-origin:top left}
+  /* FIXED TYPE SCALE — exactly two sizes on every card, every set:
+     headline 84px, everything below it 28px. No auto-fitting. */
+  .headline{font-weight:800;font-size:84px;line-height:1.07;letter-spacing:-.028em;
+            color:var(--ink);width:100%}
+  .headline .hl-line{display:block}
+  .subline{font-size:28px;font-weight:500;color:var(--gray);letter-spacing:0;
+           line-height:1.5;max-width:820px}
+
+  /* ---------- 5. content: only ever the tiny source note in this style ---------- */
+  .content{width:100%}
+  .content .ctitle{display:none}
+  /* the source citation: micro-caps credit line — visibly distinct from the
+     28px subtitle (smaller, tracked, uppercase, lighter) */
+  .content .cnote{font-size:20px;font-weight:500;color:#9A9AA0;
+                  letter-spacing:.14em;text-transform:uppercase;line-height:1.6}
+  .content .card,.content .chips,.content .shot{display:none}
+  .content .tl-row{display:none}
+  .content .tl-lines::before{content:none}
+
+  /* ---------- 6. footer: bold brand + italic tagline, bottom-left ---------- */
+  .footer{position:absolute;left:var(--pad);bottom:calc(var(--pad) - 14px);z-index:6}
+  .fbrand{font-size:24px;font-weight:700;color:var(--ink);line-height:1.35}
+  .ftag{font-size:22px;font-weight:400;font-style:italic;color:var(--gray);line-height:1.35}
+
+  [data-optional].empty{display:none}
+</style>
+</head>
+<body>
+  <div class="stage __STAGECLASS__">
+    <canvas id="paper" width="2160" height="2700"></canvas>
+
+    <div class="rail">
+      <div class="pageno" id="pageno" data-optional>__INDEX__</div>
+      <div class="year">&copy; 2026</div>
+    </div>
+
+    <div class="flow">
+      <div class="fit" id="fit">
+        <div class="headline" id="hl" data-optional>__HEADLINE__</div>
+        <div class="subline" data-optional>__SUBTITLE__</div>
+        <div class="content" data-optional>__CONTENT__</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="fbrand" data-optional>__HANDLE__</div>
+      <div class="ftag" data-optional>__TAGLINE__</div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var seed = parseInt("__BG_SEED__", 10) || 2042;
+    function rnd(){ seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
+
+    /* ---- off-white paper: the faintest grain, nothing more ---- */
+    (function paintPaper(){
+      var c = document.getElementById('paper'), x = c.getContext('2d');
+      x.fillStyle = '#F1F1F0'; x.fillRect(0, 0, 2160, 2700);
+      for (var i = 0; i < 2600; i++){
+        x.fillStyle = 'rgba(20,20,20,' + (0.008 + rnd() * 0.020).toFixed(3) + ')';
+        x.beginPath(); x.arc(rnd() * 2160, rnd() * 2700, 0.5 + rnd() * 1.2, 0, 6.2832); x.fill();
+      }
+      for (i = 0; i < 900; i++){
+        x.fillStyle = 'rgba(255,255,255,' + (0.04 + rnd() * 0.07).toFixed(3) + ')';
+        x.beginPath(); x.arc(rnd() * 2160, rnd() * 2700, 0.5 + rnd() * 1.1, 0, 6.2832); x.fill();
+      }
+      var g = x.createRadialGradient(1080, 1250, 700, 1080, 1350, 2300);
+      g.addColorStop(0, 'rgba(20,20,20,0)');
+      g.addColorStop(1, 'rgba(20,20,20,.035)');
+      x.fillStyle = g; x.fillRect(0, 0, 2160, 2700);
+    })();
+
+    /* ---- zero-pad the page number (reference shows "01", "08") ---- */
+    (function(){
+      var pn = document.getElementById('pageno');
+      if (pn && pn.textContent.trim()){
+        var n = parseInt(pn.textContent, 10);
+        if (!isNaN(n)) pn.textContent = ('0' + n).slice(-2);
+      }
+    })();
+
+    /* ---- headline: split on \n into flush-left stacked lines (size stays fixed) ---- */
+    (function(){
+      var hl = document.getElementById('hl');
+      if (!hl || hl.classList.contains('empty')) return;
+      var parts = hl.innerHTML.split('\n').filter(function(s){ return s.trim(); });
+      if (parts.length > 1){
+        hl.innerHTML = parts.map(function(s){
+          return '<span class="hl-line">' + s.trim() + '</span>';
+        }).join('');
+      }
+    })();
+
+    /* ---- scale the type block if it would ever overflow the plate ---- */
+    function fitSlide(){
+      var flow = document.querySelector('.flow');
+      var fit = document.getElementById('fit');
+      if (!flow || !fit) return;
+      fit.style.transform = 'none';
+      fit.style.width = '100%';
+      var avail = flow.clientHeight;
+      var need = fit.scrollHeight;
+      var s = need > avail ? Math.max(0.55, avail / need) : 1;
+      fit.style.transform = 'scale(' + s.toFixed(3) + ')';
+      fit.style.width = (100 / s).toFixed(2) + '%';
+      var flowBottom = flow.getBoundingClientRect().bottom, guard = 0;
+      while (fit.getBoundingClientRect().bottom > flowBottom - 2 && s > 0.55 && guard < 10){
+        s -= 0.03;
+        fit.style.transform = 'scale(' + s.toFixed(3) + ')';
+        fit.style.width = (100 / s).toFixed(2) + '%';
+        guard++;
+      }
+    }
+
+    /* hide any optional block that ended up empty */
+    document.querySelectorAll('[data-optional]').forEach(function(el){
+      if(!el.textContent.trim() && !el.querySelector('img') && !el.querySelector('svg'))
+        el.classList.add('empty');
+    });
+
+    fitSlide();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitSlide);
+  })();
+  </script>
+</body>
+</html>
