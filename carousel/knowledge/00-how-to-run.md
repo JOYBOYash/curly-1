@@ -8,6 +8,9 @@ procedurally by `template-activate.html` itself; all type is code-rendered.
 
 ## Flow
 1. **Read the knowledge base**: `copywriting.md` (MANDATORY for all copy), then
+   `context.md` (the context system — MANDATORY: context is created PER TOPIC,
+   not global; it defines that topic's audience, angle and call-out rules so
+   copy stays relevant and never neutralizes), then
    `structure.md`, `hooks.md`, `ctas.md`. Apply them.
 2. **No key needed.** Nothing here is paid.
 3. **One style only — Activate (The Graphic Effect)**:
@@ -18,8 +21,12 @@ procedurally by `template-activate.html` itself; all type is code-rendered.
    (`knowledge/new-style-from-a-sheet.md`) — never modify Activate.
 4. **Ask the user 3 questions** and wait: (1) topic or full script, (2) slide
    count 5–6, (3) @handle + footer tagline.
-5. **Write the copy** — following `copywriting.md` — so the set flows as ONE
-   continuous story: it opens with an action/hook/pain point, every card hands
+5. **Write the copy** — FIRST create the run's own context file
+   (`runs/<run-folder>/context.md`, see `knowledge/context.md`): topic angle,
+   this topic's audience, call-out + ban list, arc, facts. Then write the copy
+   **from that context** — per-topic audience, never another topic's angle.
+   The set flows as ONE continuous story: it opens with an action/hook/pain
+   point, every card hands
    the reader to the next (each headline makes them need the next card), and the
    last card closes with a CTA/takeaway that rounds everything off. Arc =
    hook → proof → mechanism → recognition → counterintuitive fix → CTA.

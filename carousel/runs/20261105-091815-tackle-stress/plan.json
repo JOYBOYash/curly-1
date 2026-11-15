@@ -1,0 +1,102 @@
+{
+  "slug": "activate-tackle-stress",
+  "topic": "How to tackle stress in life",
+  "created": "20261105-091815",
+  "template": "template-activate.html",
+  "theme": "activate",
+  "handle": "@activ8",
+  "tagline": "activate your own potential",
+  "brand_label": "@v8",
+  "canvas": [
+    1080,
+    1350
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "role": "hook",
+      "headline": "The problem isn't\nyour stress. It's\nwhat you *believe*\nit means.",
+      "subtitle": "",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 2041,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide01.png"
+    },
+    {
+      "index": 2,
+      "role": "body",
+      "headline": "Stress didn't\nkill. *Dreading*\nstress did.",
+      "subtitle": "fearing stress raised early death risk by 43%",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Keller et al., 2012, Health Psychology"
+        ]
+      },
+      "bg_seed": 2078,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide02.png"
+    },
+    {
+      "index": 3,
+      "role": "body",
+      "headline": "Name the feeling\nand your brain\n**settles**.",
+      "subtitle": "naming emotions quiets the brain's alarm center",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Lieberman et al., 2007, Psychological Science"
+        ]
+      },
+      "bg_seed": 2115,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide03.png"
+    },
+    {
+      "index": 4,
+      "role": "body",
+      "headline": "Your exhale is\nthe *off switch*\nfor stress.",
+      "subtitle": "5 minutes of long sighs beat mindfulness for calm",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Balban et al., 2023, Cell Reports Medicine"
+        ]
+      },
+      "bg_seed": 2152,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide04.png"
+    },
+    {
+      "index": 5,
+      "role": "body",
+      "headline": "Stress isn't\nbreaking you.\nIt's *preparing*\nyou.",
+      "subtitle": "seeing stress as fuel improved performance and health",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Crum et al., 2013, J. Personality and Social Psychology"
+        ]
+      },
+      "bg_seed": 2189,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide05.png"
+    },
+    {
+      "index": 6,
+      "role": "cta",
+      "headline": "Next time stress\nhits: name it.\nExhale.\n**Use it**.",
+      "subtitle": "your body isn't failing - it's fueling you",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 2226,
+      "out_file": "carousel\\runs\\20261105-091815-tackle-stress\\slides\\slide06.png"
+    }
+  ]
+}

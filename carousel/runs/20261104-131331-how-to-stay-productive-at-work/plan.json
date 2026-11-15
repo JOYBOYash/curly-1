@@ -1,0 +1,107 @@
+{
+  "slug": "activate-switching-tax",
+  "topic": "How to stay productive at work (the switching tax) - Activate",
+  "template": "template-activate.html",
+  "theme": "activate",
+  "handle": "@activ8",
+  "tagline": "activate your own potential",
+  "brand_label": "@v8",
+  "canvas": [
+    1080,
+    1350
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "role": "hook",
+      "headline": "You're not\n*unfocused*.\nYour workday\nis just\nswitching tasks\nall day.",
+      "subtitle": "",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 7311,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide01.png",
+      "microcopy": ""
+    },
+    {
+      "index": 2,
+      "role": "body",
+      "headline": "In real offices,\na new task\nstarts every\n**3 minutes**.",
+      "subtitle": "work fragments faster than any to-do list",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Mark et al., 2005, 'No Task Left Behind?'"
+        ]
+      },
+      "bg_seed": 7347,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide02.png",
+      "microcopy": ""
+    },
+    {
+      "index": 3,
+      "role": "body",
+      "headline": "Every switch\nleaves a\nresidue. Half\nyour mind\n**stays behind**.",
+      "subtitle": "your next work task pays the tax before it starts",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Leroy, 2009, Org. Behav. Human Decision Processes"
+        ]
+      },
+      "bg_seed": 7383,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide03.png",
+      "microcopy": ""
+    },
+    {
+      "index": 4,
+      "role": "body",
+      "headline": "It can take\n**23 minutes**\nto refocus\nafter one\ninterruption.",
+      "subtitle": "the average pause before work focus fully returns",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Gloria Mark, UC Irvine, research on interrupted work"
+        ]
+      },
+      "bg_seed": 7419,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide04.png",
+      "microcopy": ""
+    },
+    {
+      "index": 5,
+      "role": "body",
+      "headline": "Never switch\nwork tasks\nempty-handed:\njot the\n**next step**.",
+      "subtitle": "tested on real work tasks - planning restored focus",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Leroy, 2009, Org. Behav. Human Decision Processes"
+        ]
+      },
+      "bg_seed": 7455,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide05.png",
+      "microcopy": ""
+    },
+    {
+      "index": 6,
+      "role": "cta",
+      "headline": "Productivity\nat work isn't\ndoing more\nall day.\nIt's\n**finishing**.",
+      "subtitle": "save this - and pick tomorrow's one real finish",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 7491,
+      "out_file": "carousel\\runs\\20261104-131331-how-to-stay-productive-at-work\\slides\\slide06.png",
+      "microcopy": ""
+    }
+  ]
+}

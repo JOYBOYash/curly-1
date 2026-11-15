@@ -1,0 +1,105 @@
+{
+  "slug": "activate-someday-gap",
+  "topic": "How can I get closer to my dreams (the someday gap) - Activate",
+  "template": "template-activate.html",
+  "theme": "activate",
+  "handle": "@activ8",
+  "tagline": "activate your own potential",
+  "brand_label": "@v8",
+  "canvas": [
+    1080,
+    1350
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "role": "hook",
+      "headline": "You dream\nbig. You just\nnever book\nthe first\n*hour*.",
+      "subtitle": "",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 9101,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide01.png",
+      "microcopy": ""
+    },
+    {
+      "index": 2,
+      "role": "body",
+      "headline": "Here's the\ntrap: the\nmore vividly\nyou dream,\nthe less\nyou *do*.",
+      "subtitle": "vivid dreamers put in less effort \u2014 measured",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Oettingen & Mayer, 2002, Pers. Soc. Psych. Bull."
+        ]
+      },
+      "bg_seed": 9137,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide02.png",
+      "microcopy": ""
+    },
+    {
+      "index": 3,
+      "role": "body",
+      "headline": "Why? Your\nbrain already\ntasted the\nwin. So it\nrelaxes\n**early**.",
+      "subtitle": "an imagined victory reads as a finished one",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Oettingen & Mayer, 2002, Pers. Soc. Psych. Bull."
+        ]
+      },
+      "bg_seed": 9173,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide03.png",
+      "microcopy": ""
+    },
+    {
+      "index": 4,
+      "role": "body",
+      "headline": "Your saved\nquotes aren't\nprogress.\nThey're proof\nyou *paused*.",
+      "subtitle": "collecting inspiration feels like building. It isn't.",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 9209,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide04.png",
+      "microcopy": ""
+    },
+    {
+      "index": 5,
+      "role": "body",
+      "headline": "Swap the\nwish for\n**one rule**:\n'Tomorrow,\n6 a.m.,\nI write.'",
+      "subtitle": "94 studies: plans like this move goals",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": [
+          "Gollwitzer & Sheeran, 2006, Adv. Exp. Soc. Psych."
+        ]
+      },
+      "bg_seed": 9245,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide05.png",
+      "microcopy": ""
+    },
+    {
+      "index": 6,
+      "role": "cta",
+      "headline": "Book one\n30-minute\nslot.\nTomorrow\nmorning.\n**That's it**.",
+      "subtitle": "save this - your dream's first appointment is tomorrow",
+      "content": {
+        "type": "lines",
+        "items": [],
+        "note": []
+      },
+      "bg_seed": 9281,
+      "out_file": "carousel\\runs\\20261104-141402-how-can-i-get-closer-to-my-dreams\\slides\\slide06.png",
+      "microcopy": ""
+    }
+  ]
+}
